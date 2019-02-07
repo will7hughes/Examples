@@ -23,7 +23,7 @@ public class PointTest {
 		Point x = new Point(p);
 		
 		int expected = CONST_X;
-		int actual = p.getX();
+		int actual = x.getX();
 		
 		assertEquals(expected, actual);
 	}
