@@ -5,6 +5,8 @@ import org.junit.Test;
 
 public class PointTest {
 
+	private static final int CONST_X = 7;
+
 	@Test
 	public void testPoint() {
 		Point p = new Point();
@@ -17,10 +19,10 @@ public class PointTest {
 	
 	@Test
 	public void testPointPoint() {
-		Point p = new Point(0, 0);
+		Point p = new Point(CONST_X, 0);
 		Point x = new Point(p);
 		
-		int expected = 0;
+		int expected = CONST_X;
 		int actual = p.getX();
 		
 		assertEquals(expected, actual);
@@ -28,9 +30,9 @@ public class PointTest {
 	
 	@Test
 	public void testPointIntInt() {
-		Point p = new Point(0, 0);
+		Point p = new Point(CONST_X, 0);
 		
-		int expected = 0;
+		int expected = CONST_X;
 		int actual = p.getX();
 		
 		assertEquals(expected, actual);

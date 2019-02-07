@@ -16,12 +16,16 @@ public class Point {
 	}
 	
 	public Point(int x, int y) {
-		super();
-		this.x = x;
-		this.y = y;
+//		super();
+//		this.x = x;
+//		this.y = y;
+		if (x >= 0)
+			this.x = x;
+		if (y >= 0)
+			this.y = y;
 		
 		++counter;
-		System.out.println("Counter is: " + counter);
+//		System.out.println("Counter is: " + counter);
 	}
 
 	public int getX() {
